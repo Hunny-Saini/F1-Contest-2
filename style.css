@@ -1,0 +1,373 @@
+*{
+    margin: 0px;
+    background-color: #111111;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+.container{
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-flow: column;
+    padding-top: 3vh;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 2vh;
+}
+
+
+.header{
+    border: 2px #808080 solid;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+
+
+.content-main{
+    /* width: 700px;
+    height: 700px; */
+    /* border: 4px solid rgb(0, 0, 255); */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29px;
+}
+
+.left{
+    width: 30%;
+}
+
+.left1{
+    border: 2px #808080 solid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-bottom: 28px;
+    font-size: 1.4vw;
+}
+
+.left1 h3{
+    margin-top: 28px;
+}
+
+.left2{
+    border: 2px #808080 solid;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-radius: 12px;
+    padding: 34px 0px;
+    font-size: 1.4vw;
+    margin-top: 29px;
+}
+
+.left2 ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.left2 li{
+    margin-top: 3vh;
+}
+
+.left3{
+    border: 2px #808080 solid;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 14px;
+    margin-top: 36px;
+}
+
+.left3 h3{
+    margin-bottom: 7px;
+}
+
+.links-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.links-container a {
+    margin-top: 13px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+a span{
+    color: #808080;
+    font-size: 1.4vw;
+    padding-left: 24px;
+}
+
+.right{
+    width: 68%;
+    height: auto;
+    border: 2px #808080 solid;
+    padding-top: 6vh;
+    padding-left: 3vh;
+    padding-right: 2.5vh;
+    border-radius: 12px;
+    margin-left: 2vw;
+}
+
+.header h2{
+    margin-left: 24px;
+    margin-top: 8px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 2vw;
+    height: 4.5vh;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5vw;
+    color: #808080;
+    line-height: 5vh;
+    text-align: center;
+    display: none;
+}
+
+input[type="checkbox"]:hover{
+    background-color: #808080;
+}
+
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+.table-head{
+    text-align: start;
+}
+
+.table-status{
+    text-align: center;
+    width: 10%;
+}
+
+.table-id{
+    text-align: center;
+    vertical-align: middle;
+    width: 6%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th + th{
+    border-left: 1px solid #808080;
+}
+
+th{
+    border-bottom: 1px solid #808080;
+}
+
+th, td {
+    padding: 12px;
+}
+
+td + td{
+    border-left: 1px solid #808080;
+}
+
+.table-container{
+    border: 1px solid #808080;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+}
+
+.small{
+    display: none;
+}
+
+
+@media (max-width: 640px) {
+    
+    body{
+        margin: 0px;
+    }
+
+    *{
+        background-color: #111111;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+        display: flex;
+        flex-flow: column;
+        padding-top: 19px;
+        padding-right: 23px;
+        padding-bottom: 37px;
+        padding-left: 22px;
+        width: 90vw;
+        margin: 0px;
+    } 
+
+    .content-main{
+        flex-flow: column wrap;
+        padding-top: 26px;
+        margin: 0px;
+    }
+
+    .header{
+        justify-content: center;
+    }
+
+    .left {
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .right{
+        width: auto;
+        margin-left: 0px;
+        margin-top: 0px;
+        border: none;
+        padding: 0px;
+        margin-top: 30px;
+        /* width: auto; */
+    }
+
+    .left1{
+        padding-top: 23px;
+        padding-bottom: 23px;
+        margin-top: 26px;
+        font-size: 20px;
+    }
+
+    .left2{
+        font-size: 20px;
+        padding-left: 42px;
+        padding-top: 46px;
+        padding-bottom: 40px;
+        margin-top: 26px;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+    }
+
+    .left3{
+        padding-top: 30px;
+        padding-left: 43px;
+        padding-bottom: 30px;
+        font-size: 24px;
+        margin-top: 26px;
+    }
+    
+
+    .left3 div{
+        margin-top: 7px;
+    }
+
+    .left3 a{
+        margin-top: 24px;
+    }
+
+    a span{
+        font-size: 24px;
+        margin-left: 23px;
+    }
+
+    /* .right{
+        order: 2;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 30px;
+        border: none;
+         width: auto; 
+    } */
+
+    .table-container{
+        border-radius: 10px;
+        margin-top: 3vh;
+        /* margin-bottom: 2vh; */
+        font-size: 16px;
+    }
+
+    .right h1{
+        font-size: 20px;
+    }
+
+    .table-status{
+        text-align: center;
+        width: 20%;
+    }
+    
+    .table-id{
+        text-align: center;
+        vertical-align: middle;
+        width: 12%;
+    }
+    
+    table{
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    input[type="checkbox"]{
+        appearance: none;
+        width: 4vw;
+        height: 3vh;
+        border: 1px solid #808080;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:hover {
+        background-color: #ffffff00;
+    }
+
+    input[type="checkbox"]:after{
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 1.7vw;
+        color: #808080;
+        line-height: 3vh;
+        text-align: center;
+        display: none;
+    }
+
+    .big{
+        display: none;
+    }
+
+    .small{
+        display: block;
+    }
+}
